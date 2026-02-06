@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Dheeraj Sain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/64/5831/5831573.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-bracket">&lt;</span>dee<span class="logo-bracket">&gt;</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-link" href="index.html#home">Home</a></li>
+                <li><a class="nav-link" href="index.html#about">About</a></li>
+                <li><a class="nav-link" href="index.html#skills">Skills</a></li>
+                <li><a class="nav-link" href="index.html#experience">Experience</a></li>
+                <li><a class="nav-link active" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">All Projects</h1>
+                <p class="page-description">
+                    A comprehensive showcase of solutions I've built—from AI-powered platforms to 
+                    cloud automation systems. Each project demonstrates problem-solving, technical 
+                    expertise, and measurable impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Listing -->
+    <section class="projects-section">
+        <div class="container">
+            
+            <!-- Project 1: KubeBuddy -->
+            <div id="kubebuddy" class="project-detail">
+                <div class="project-header">
+                    <div class="project-icon-large">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <div class="project-header-text">
+                        <h2 class="project-name">KubeBuddy</h2>
+                        <p class="project-tagline">AI-Powered Kubernetes Management Dashboard</p>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-section">
+                        <h3>Overview</h3>
+                        <p>
+                            KubeBuddy is an intelligent Kubernetes management platform that combines the power of 
+                            Large Language Models (LLMs) with Kubernetes APIs to provide AI-assisted cluster management. 
+                            The platform enables DevOps teams to interact with Kubernetes clusters using natural language 
+                            while maintaining robust automation and monitoring capabilities.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Problem Statement</h3>
+                        <p>
+                            Managing Kubernetes clusters traditionally requires deep technical knowledge and extensive 
+                            command-line expertise. Teams spend significant time troubleshooting issues, writing complex 
+                            kubectl commands, and manually managing cluster resources. This creates a steep learning curve 
+                            and reduces operational efficiency.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Solution</h3>
+                        <p>
+                            Developed a comprehensive AI-powered dashboard that:
+                        </p>
+                        <ul>
+                            <li>Integrates LLMs (Gemini and Ollama) for natural language interaction with Kubernetes clusters</li>
+                            <li>Provides real-time cluster monitoring and resource visualization through Django web interface</li>
+                            <li>Implements automated troubleshooting and recommendations using AI analysis</li>
+                            <li>Enables natural language queries for cluster operations and status checks</li>
+                            <li>Includes comprehensive documentation and deployment guides</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-comments"></i>
+                                <h4>AI Chat Interface</h4>
+                                <p>Natural language interaction with Kubernetes using LLMs</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Real-time Monitoring</h4>
+                                <p>Live cluster metrics and resource utilization tracking</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-robot"></i>
+                                <h4>Automated Management</h4>
+                                <p>AI-driven cluster optimization and maintenance</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-code-branch"></i>
+                                <h4>CI/CD Integration</h4>
+                                <p>GitHub Actions workflows with SonarQube quality gates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Technical Implementation</h3>
+                        <div class="tech-details">
+                            <div class="tech-item">
+                                <strong>Backend:</strong> Django framework with RESTful API architecture
+                            </div>
+                            <div class="tech-item">
+                                <strong>AI Integration:</strong> Gemini API and Ollama for LLM capabilities
+                            </div>
+                            <div class="tech-item">
+                                <strong>Kubernetes:</strong> Official Kubernetes Python client for cluster interaction
+                            </div>
+                            <div class="tech-item">
+                                <strong>CI/CD:</strong> GitHub Actions for automated testing and deployment
+                            </div>
+                            <div class="tech-item">
+                                <strong>Code Quality:</strong> SonarQube integration for continuous code analysis
+                            </div>
+                            <div class="tech-item">
+                                <strong>Containerization:</strong> Docker for consistent deployment across environments
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Impact & Results</h3>
+                        <ul class="impact-list">
+                            <li><strong>Reduced Learning Curve:</strong> New team members can interact with clusters using natural language</li>
+                            <li><strong>Improved Efficiency:</strong> Automated troubleshooting reduces mean time to resolution</li>
+                            <li><strong>Enhanced Documentation:</strong> Comprehensive guides enable easy adoption and deployment</li>
+                            <li><strong>Quality Assurance:</strong> CI/CD pipelines ensure code quality and reliability</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">Kubernetes APIs</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: RAG Data Analyst Chatbot -->
+            <div id="rag-chatbot" class="project-detail">
+                <div class="project-header">
+                    <div class="project-icon-large">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-header-text">
+                        <h2 class="project-name">RAG Data Analyst Chatbot</h2>
+                        <p class="project-tagline">Intelligent CSV Data Analysis Assistant</p>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-section">
+                        <h3>Overview</h3>
+                        <p>
+                            An intelligent data analysis chatbot that leverages Retrieval-Augmented Generation (RAG) 
+                            to provide natural language insights from CSV datasets. The system enables non-technical 
+                            users to query and analyze complex data using conversational AI.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Problem Statement</h3>
+                        <p>
+                            Business analysts and stakeholders often struggle to extract insights from large CSV datasets 
+                            without technical skills. Traditional data analysis requires knowledge of SQL, Python, or 
+                            specialized tools, creating a barrier for quick decision-making.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Solution</h3>
+                        <p>
+                            Built an AI-powered chatbot that:
+                        </p>
+                        <ul>
+                            <li>Processes and analyzes CSV datasets using advanced CSVAgent capabilities</li>
+                            <li>Supports multiple LLM backends (OpenAI API, Gemini API, Ollama) for flexibility</li>
+                            <li>Provides real-time, accurate responses to natural language queries</li>
+                            <li>Enables data exploration through conversational interface built with Streamlit</li>
+                            <li>Automates complex data processing tasks in the backend</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-upload"></i>
+                                <h4>Easy Data Upload</h4>
+                                <p>Simple CSV file upload with automatic parsing</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-comments"></i>
+                                <h4>Natural Language Queries</h4>
+                                <p>Ask questions in plain English, get instant insights</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-brain"></i>
+                                <h4>Multi-LLM Support</h4>
+                                <p>Choose from OpenAI, Gemini, or Ollama backends</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Real-time Analysis</h4>
+                                <p>Fast processing for quick decision-making</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Technical Implementation</h3>
+                        <div class="tech-details">
+                            <div class="tech-item">
+                                <strong>Frontend:</strong> Streamlit for interactive web interface
+                            </div>
+                            <div class="tech-item">
+                                <strong>Data Processing:</strong> CSVAgent for intelligent data querying
+                            </div>
+                            <div class="tech-item">
+                                <strong>AI Models:</strong> OpenAI GPT, Google Gemini, and Ollama integration
+                            </div>
+                            <div class="tech-item">
+                                <strong>Backend:</strong> Python with automated data processing pipelines
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Impact & Results</h3>
+                        <ul class="impact-list">
+                            <li><strong>Democratized Data Analysis:</strong> Non-technical users can extract insights independently</li>
+                            <li><strong>Faster Decision-Making:</strong> Real-time responses enable quick business decisions</li>
+                            <li><strong>Cost-Effective:</strong> Multiple LLM options provide flexibility based on budget</li>
+                            <li><strong>Improved Accuracy:</strong> CSVAgent ensures reliable data interpretation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CSVAgent</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Training Certification Automation -->
+            <div id="certification" class="project-detail">
+                <div class="project-header">
+                    <div class="project-icon-large">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="project-header-text">
+                        <h2 class="project-name">Training Certification Automation</h2>
+                        <p class="project-tagline">Serverless Certificate Generation System</p>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-section">
+                        <h3>Overview</h3>
+                        <p>
+                            A comprehensive automation system that modernized the entire training certification lifecycle. 
+                            The solution transformed a manual, time-intensive process into a scalable, serverless workflow 
+                            that reduced execution time and manual effort by 60%.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Problem Statement</h3>
+                        <p>
+                            The organization's training certification process was plagued by inefficiencies:
+                        </p>
+                        <ul>
+                            <li>Legacy Python code required manual intervention from technical team</li>
+                            <li>Non-technical trainers couldn't generate certificates independently</li>
+                            <li>Process relied on always-on VM, increasing infrastructure costs</li>
+                            <li>Manual certificate generation was time-consuming and error-prone</li>
+                            <li>No automated notification system for certificate completion</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Solution</h3>
+                        <p>
+                            Implemented a three-phase modernization approach:
+                        </p>
+                        <ol>
+                            <li><strong>Code Refactoring:</strong> Optimized legacy Python code using Pandas, reducing execution time significantly</li>
+                            <li><strong>User Interface:</strong> Built Flask-based web UI enabling non-technical users to upload CSV/Excel files and trigger certificate generation</li>
+                            <li><strong>Serverless Migration:</strong> Migrated entire workflow to AWS Lambda with S3 triggers, eliminating VM dependency</li>
+                        </ol>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-upload"></i>
+                                <h4>Easy File Upload</h4>
+                                <p>Web interface for CSV/Excel uploads by non-technical users</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-bolt"></i>
+                                <h4>Serverless Architecture</h4>
+                                <p>AWS Lambda functions triggered by S3 events</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Auto Notifications</h4>
+                                <p>Automated email notifications via SMTP integration</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Performance Boost</h4>
+                                <p>60% reduction in execution time and manual effort</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Architecture & Implementation</h3>
+                        <div class="tech-details">
+                            <div class="tech-item">
+                                <strong>Data Processing:</strong> Python with Pandas for efficient data manipulation
+                            </div>
+                            <div class="tech-item">
+                                <strong>Web Interface:</strong> Flask framework for user-friendly UI
+                            </div>
+                            <div class="tech-item">
+                                <strong>Cloud Infrastructure:</strong> AWS Lambda for serverless execution
+                            </div>
+                            <div class="tech-item">
+                                <strong>Storage:</strong> Amazon S3 for file storage and event triggers
+                            </div>
+                            <div class="tech-item">
+                                <strong>Notifications:</strong> SMTP integration for automated email delivery
+                            </div>
+                            <div class="tech-item">
+                                <strong>Deployment:</strong> Linux-based deployment environment
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Impact & Results</h3>
+                        <ul class="impact-list">
+                            <li><strong>60% Efficiency Gain:</strong> Dramatic reduction in execution time and manual effort</li>
+                            <li><strong>Cost Optimization:</strong> Eliminated need for always-on VM infrastructure</li>
+                            <li><strong>Empowered Users:</strong> Non-technical trainers can now generate certificates independently</li>
+                            <li><strong>Scalability:</strong> Serverless architecture scales automatically with demand</li>
+                            <li><strong>Improved Transparency:</strong> Automated notifications keep stakeholders informed</li>
+                            <li><strong>Zero Downtime:</strong> Eliminated maintenance windows and server dependencies</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">Amazon S3</span>
+                            <span class="tech-tag">SMTP</span>
+                            <span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: AWS Cost Governance Dashboard -->
+            <div id="aws-dashboard" class="project-detail">
+                <div class="project-header">
+                    <div class="project-icon-large">
+                        <i class="fa fa-dollar"></i>
+                    </div>
+                    <div class="project-header-text">
+                        <h2 class="project-name">AWS Cost Governance Dashboard</h2>
+                        <p class="project-tagline">Cloud Resource Monitoring & Optimization Platform</p>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <div class="project-section">
+                        <h3>Overview</h3>
+                        <p>
+                            An internal cloud cost management dashboard designed to identify and eliminate wasteful AWS 
+                            spending. The platform provides real-time visibility into idle resources across all regions, 
+                            enabling administrators and trainers to make informed decisions about resource termination.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Problem Statement</h3>
+                        <p>
+                            The organization faced significant challenges with cloud cost management:
+                        </p>
+                        <ul>
+                            <li>Idle EC2 instances and unattached volumes consuming budget across multiple regions</li>
+                            <li>No centralized visibility into resource utilization</li>
+                            <li>Training teams creating temporary resources that weren't properly cleaned up</li>
+                            <li>Manual resource auditing was time-consuming and incomplete</li>
+                            <li>Lack of actionable insights for cost optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Solution</h3>
+                        <p>
+                            Developed a comprehensive cost governance platform that:
+                        </p>
+                        <ul>
+                            <li>Scans all AWS regions for idle EC2 instances, unattached volumes, and unused resources</li>
+                            <li>Provides real-time monitoring dashboard with resource utilization metrics</li>
+                            <li>Enables one-click resource termination for administrators and trainers</li>
+                            <li>Implements role-based access control for secure resource management</li>
+                            <li>Tracks cost savings and generates usage reports</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-search"></i>
+                                <h4>Multi-Region Scanning</h4>
+                                <p>Automated discovery of idle resources across all AWS regions</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-chart-pie"></i>
+                                <h4>Cost Visualization</h4>
+                                <p>Interactive dashboards showing spending patterns and waste</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-trash-alt"></i>
+                                <h4>Resource Management</h4>
+                                <p>Easy termination of unused resources with audit trail</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-bell"></i>
+                                <h4>Smart Alerts</h4>
+                                <p>Proactive notifications for cost anomalies and idle resources</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Technical Implementation</h3>
+                        <div class="tech-details">
+                            <div class="tech-item">
+                                <strong>AWS Integration:</strong> Boto3 Python SDK for comprehensive AWS API access
+                            </div>
+                            <div class="tech-item">
+                                <strong>Resource Monitoring:</strong> EC2, EBS volumes, S3 buckets, and other AWS services
+                            </div>
+                            <div class="tech-item">
+                                <strong>Security:</strong> IAM roles and policies for controlled access
+                            </div>
+                            <div class="tech-item">
+                                <strong>Monitoring:</strong> CloudWatch integration for metrics and alarms
+                            </div>
+                            <div class="tech-item">
+                                <strong>Storage:</strong> S3 for logs and historical cost data
+                            </div>
+                            <div class="tech-item">
+                                <strong>Interface:</strong> Simple, intuitive UI for non-technical users
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Impact & Results</h3>
+                        <ul class="impact-list">
+                            <li><strong>Significant Cost Reduction:</strong> Identified and eliminated unnecessary cloud spending</li>
+                            <li><strong>Improved Visibility:</strong> Centralized view of resources across all regions</li>
+                            <li><strong>Empowered Teams:</strong> Trainers can manage their own resource lifecycle</li>
+                            <li><strong>Preventive Controls:</strong> Proactive alerts prevent cost overruns</li>
+                            <li><strong>Audit Trail:</strong> Complete history of resource actions for compliance</li>
+                            <li><strong>Time Savings:</strong> Automated scanning eliminates manual auditing effort</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Boto3</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">Amazon S3</span>
+                            <span class="tech-tag">AWS IAM</span>
+                            <span class="tech-tag">CloudWatch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in collaborating?</h2>
+                <p>Let's discuss how we can work together to build innovative solutions.</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2026 Dheeraj Sain. Crafted with passion and precision.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
